@@ -1,0 +1,59 @@
+.interest__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 3rem;
+}
+
+.interest {
+    background: var(--color-bg-variant);
+    border-radius: 0 0 2rem 2rem;
+    border: 1px solid var(--color-primary);
+    /* height: fit-content; */
+    transition: var(--transition); 
+    
+}
+
+.interest:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.interest__head {
+    background: var(--color-primary);
+    padding: 2rem;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.interest__head h3{
+    color: var(--color-bg);
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+.interest p {
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) *TABLET *====== */
+@media screen and (max-width:1024px) {
+    .interest__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .interest{
+        height: auto;
+    }
+}
+
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) *PHONES *====== */
+@media screen and (max-width:600px) {
+    .interest__container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

@@ -1,0 +1,17 @@
+.social_text{
+    display: none;
+    position: absolute;
+    margin: -2.7rem -0.5rem;
+    font-size: small;
+}
+
+.social_show:hover + .social_text{
+    display: block;
+    color: #fff;
+    transition: opacity 2s; 
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+    -ms-animation: fadeIn linear 2s
+}
